@@ -117,3 +117,4 @@ dmypy.json
 
 # My configration:
 *.pyproj*
+.vscode
