@@ -262,14 +262,14 @@ print(y)  # Prints "[[ 2  2  4]
           #          [ 8  8 10]
           #          [11 11 13]]"
 
-两个维度相同 或者其中一个为1则可以broadcasting成与高维度一样大小的array
-Broadcasting two arrays together follows these rules:
+# 两个维度相同 或者其中一个为1则可以broadcasting成与高维度一样大小的array
+# Broadcasting two arrays together follows these rules:
 
-    If the arrays do not have the same rank, prepend the shape of the lower rank array with 1s until both shapes have the same length.
-    The two arrays are said to be compatible in a dimension if they have the same size in the dimension, or if one of the arrays has size 1 in that dimension.
-    The arrays can be broadcast together if they are compatible in all dimensions.
-    After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
-    In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
+#     If the arrays do not have the same rank, prepend the shape of the lower rank array with 1s until both shapes have the same length.
+#     The two arrays are said to be compatible in a dimension if they have the same size in the dimension, or if one of the arrays has size 1 in that dimension.
+#     The arrays can be broadcast together if they are compatible in all dimensions.
+#     After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
+#     In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
 
 # Compute outer product of vectors
 v = np.array([1,2,3])  # v has shape (3,)
