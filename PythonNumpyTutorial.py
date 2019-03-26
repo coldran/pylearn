@@ -118,7 +118,7 @@ e = np.random.random((2,2))  # Create an array filled with random values
 print(e)                     # Might print "[[ 0.91940167  0.08143941]
                              #               [ 0.68744134  0.87236687]]"
 
-切片 顾头不顾尾
+# 切片 顾头不顾尾
 a = np.array([range(1, 5), range(5, 9), range(9, 13)])
 print(a)
 
